@@ -39,13 +39,16 @@
 
 <title>Online shopping- ${title}</title>
 
-  <!-- code for active menu -->
-    <script>
-    window.menu= '${title}';
-    </script>
+<!-- code for active menu -->
+<script>
+	window.menu = '${title}';
+</script>
 
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap readable theme  -->
+<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
 <!-- Custom CSS -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -54,13 +57,13 @@
 </head>
 <body>
 
-
+	<div class="wrapper">
 
 		<!-- Navigation -->
 		<%@include file="./shared/navbar.jsp"%>
 
 		<!-- Page Content -->
-		
+		<div class="content">
 			<!-- loading the home content -->
 			<c:if test="${userClickHome == true }">
 				<%@include file="home.jsp"%>
@@ -75,21 +78,21 @@
 			<c:if test="${userClickContact == true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
-		
-  
-  
-    <!-- Footer comes here -->
-    <%@include file="./shared/footer.jsp" %>
+
+		</div>
+
+		<!-- Footer comes here -->
+		<%@include file="./shared/footer.jsp"%>
 
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
-	
+
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
-		 <!-- self coded javascript -->
-   <script src="${js}/myapp.js"></script>
-		
-	
+		<!-- self coded javascript -->
+		<script src="${js}/myapp.js"></script>
+
+	</div>
 </body>
 
 </html>
