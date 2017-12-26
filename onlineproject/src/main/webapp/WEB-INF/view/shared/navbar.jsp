@@ -17,15 +17,17 @@
                 <ul class="nav navbar-nav">
                     <li id="about">
                         <a href="${contextRoot}/about">About Us</a>
-                    </li>
-                    
-                     <li id="listProducts">
-                        <a href="${contextRoot}/listProducts">View Products</a>
-                    </li>
-                    
+                     </li>
+                     
                     <li id="contact">
                         <a href="${contextRoot}/contact">Contact</a>
                     </li>
+                   
+                     <li id="listProducts">
+                        <a href="${contextRoot}/show/all/products">View Products</a>
+                    </li>
+                    
+                    
                  </ul>
       
             </div>
