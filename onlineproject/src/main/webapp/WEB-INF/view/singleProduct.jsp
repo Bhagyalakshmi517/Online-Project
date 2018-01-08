@@ -48,7 +48,7 @@
 		<span class="glyphicon glyphicon-shopping-cart"></span> Add to cart</a>
 	
 
-<a href="${contextRoot}/show/all/products" class="btn btn-success">Back </a>
+<a href="${contextRoot}/show/all/products" class="btn btn-primary">Back </a>
 
 
 </div>
